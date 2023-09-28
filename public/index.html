@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="container-report">
+    <aside class="report__perfile">
+      <div class="perfile__data">
+        <div class="data__img">
+          <img 
+          class="img" 
+          src="https://i.pinimg.com/1200x/90/f4/00/90f400d759aaffb9728538f96811933b.jpg"
+          alt="DemonioCelestial">
+        </div>
+
+        <div class="data__personal">
+          <h3 class="personal__for">Report for</h3>
+          <p class="personal__name">Justin Huertas</p>
+        </div>
+      </div>
+
+      <ul class="data__info">
+        <li class="info__tabs">
+          <a href="#" class="tabs__links active" data-id="daily">
+            Daily
+            <i class='bx bx-calendar-check'></i>
+          </a>
+        </li>
+
+        <li class="info__tabs">
+          <a href="#" class="tabs__links" data-id="weekly">
+            Weekly
+            <i class='bx bx-calendar-check'></i>
+          </a>
+        </li>
+
+        <li class="info__tabs">
+          <a href="#" class="tabs__links" data-id="monthly">
+            Monthly
+            <i class='bx bx-calendar-check'></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="report__hours active" id="daily"></div>
+    <div class="report__hours" id="weekly"></div>
+    <div class="report__hours" id="monthly"></div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
